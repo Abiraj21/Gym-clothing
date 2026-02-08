@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GYM Swag</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Ensure carousel images scale properly on mobile */
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: cover;
+        }
+        /* Product card images scale on small devices */
+        .product-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        /* Fix description + image section for mobile */
+        .home-description {
+            flex-wrap: wrap !important;
+        }
+        .home-description img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://imgs.search.brave.com/U7pXLA2_N04bsAh6SPPj-jbMHOYReS9TC7mS6MaEoc4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtcGxhdGZvcm0u/OTlzdGF0aWMuY29t/Ly9qRWZ0aWwzcV9Z/ZnZiSHVEVVlYVFlX/a080Mjg9LzIyOXgx/ODQ6OTc4eDkzMy9m/aXQtaW4vNTAweDUw/MC85OWRlc2lnbnMt/Y29udGVzdHMtYXR0/YWNobWVudHMvMTMz/LzEzMzI2NC9hdHRh/Y2htZW50XzEzMzI2/NDg0NA" 
+                     alt="GYM SWAG" style="width:60px;" class="rounded-pill"> 
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                <li class="nav-item"><a class="nav-link btn btn-outline-dark text-light me-1 mb-1" href="#section1">Home</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-outline-dark text-light me-1 mb-1" href="#section2">Products</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-outline-dark text-light me-1 mb-1" href="#section3">About Us</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-outline-dark text-light me-1 mb-1" href="#section4">Collections</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-outline-dark text-light me-1 mb-1" href="#section5">Contact Us</a></li>
+            </ul>
+            <form class="d-flex mb-2">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-primary" type="button">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Home Carousel -->
+    <div id="section1" class="mt-5 pt-4">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://thumbs.dreamstime.com/b/fitness-sporty-girl-wearing-fashion-clothes-sportswear-over-street-wall-outdoor-sports-urban-style-teen-model-swag-posing-93757765.jpg" alt="Los Angeles">
+                    <div class="carousel-caption">
+                        <h3>GYM SWAG</h3>
+                        <p>Style with the Grind!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/57be022abebafbe8a9781db3/1630363412006-EPP03OCEBGU1OVP89V5Z/unsplash-image-JVnLqWGWVzs.jpg" alt="Chicago">
+                    <div class="carousel-caption">
+                        <h3>Discipline</h3>
+                        <p>Hard Work needs a durable outfit!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://imgs.search.brave.com/vqSKtgLzAeiCd8aZRsn65lTXDKmLDtYR1zDWY6t46sE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvaW50/ZW5zZS1neW0td29y/a291dC1zZXNzaW9u/LWNwYno2a25laDc3/b3dtY3cuanBn" alt="New York">
+                    <div class="carousel-caption">
+                        <h3>STAY RELENTLESS</h3>
+                        <p>Never Give Up!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Home Description -->
+    <div class="container d-flex home-description mt-5 mb-5 p-3 shadow flex-wrap">
+        <div class="col-md-6 col-12">
+            <h3 class="text-center">WEAR YOUR DISCIPLINE</h3>
+            <p class="mb-3">This is not streetwear. This is training gear. Our T-shirts are designed for lifters, athletes, and anyone who believes consistency beats motivation.</p>
+            
+            <h3 class="text-center">WHY CHOOSE US</h3>
+            <p class="mb-3">
+                We don’t create gym T-shirts for trends—we create them for training. Every piece is thoughtfully engineered to support intense workouts, heavy lifting, and high-energy sessions where comfort and durability matter most. Our fabrics are carefully selected to be breathable, sweat-resistant, and quick-dry, helping you stay focused even during the toughest sets. The fit is gym-optimized to move naturally with your body, allowing unrestricted motion through squats, presses, pulls, and cardio. Reinforced stitching and premium construction ensure long-lasting performance, maintaining shape, strength, and style even after repeated washes. Combined with clean, minimal designs that project confidence and discipline, our apparel is built for athletes who train with purpose, consistency, and pride—inside and outside the gym.
+            </p>
+        </div>
+        <div class="col-md-6 col-12 text-center">
+    <img src="https://imgs.search.brave.com/Jx5xBzDDceBNrQrJU75PHfK6M6jcEytHd27wDilT0F0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzRmLzlh/L2E2LzRmOWFhNmI5/ZDc1MGJhNTlmNTVh/NjFjOTNhOTMxNmZj/LmpwZw" 
+         alt="gym image" class="rounded img-fluid" style="height:400px;">
+</div>
+    </div>
+
+	<h1 class="text-center">Products</h1>
+    <!-- Product Section -->
+    <!-- Product Section -->
+    <div id="section4" class="container d-flex flex-wrap justify-content-center p-3">
+        <div class="p-3 product-card col-md-6 col-lg-4 col-12">
+            <div class="card text-bg-dark">
+                <img class="card-img-top p-3" src="Assets/t-shirt1.webp" alt="t-shirt1 image" style="height: 400px">
+                <div class="card-body">
+                    <h4 class="card-title">Stylish SWAG Oversized T-shirt</h4>
+                    <a href="#demo" data-bs-toggle="collapse">more</a>
+                    <div id="demo1" class="collapse">Lorem ipsum dolor sit amet...</div>
+                    <p>Price: LKR.4500.00</p>
+                    <div class="d-flex">
+                        <p>Size:</p>
+                        <select class="ms-3 form-select form-select-sm mb-3">
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                    </div>
+                    <p>Color: Black, White</p>
+                    <a href="#" class="btn btn-warning mb-1" data-bs-toggle="tooltip" title="Click here to purchase">Purchase</a>
+                    <button type="button" class="btn btn-warning mb-1" data-bs-toggle="modal" data-bs-target="#myModal">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+		<div class="p-3 product-card col-md-6 col-lg-4 col-12">
+            <div class="card text-bg-dark">
+                <img class="card-img-top p-3" src="Assets/t-shirt2.webp" alt="t-shirt1 image" style="height: 400px">
+                <div class="card-body">
+                    <h4 class="card-title">Stylish SWAG Oversized T-shirt</h4>
+                    <a href="#demo" data-bs-toggle="collapse">more</a>
+                    <div id="demo1" class="collapse">Lorem ipsum dolor sit amet...</div>
+                    <p>Price: LKR.4500.00</p>
+                    <div class="d-flex">
+                        <p>Size:</p>
+                        <select class="ms-3 form-select form-select-sm mb-3">
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                    </div>
+                    <p>Color: Black, White</p>
+                    <a href="#" class="btn btn-warning mb-1" data-bs-toggle="tooltip" title="Click here to purchase">Purchase</a>
+                    <button type="button" class="btn btn-warning mb-1" data-bs-toggle="modal" data-bs-target="#myModal">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+		<div class="p-3 product-card col-md-6 col-lg-4 col-12">
+            <div class="card text-bg-dark">
+                <img class="card-img-top p-3" src="Assets/t-shirt3.webp" alt="t-shirt1 image" style="height: 400px">
+                <div class="card-body">
+                    <h4 class="card-title">Stylish SWAG Oversized T-shirt</h4>
+                    <a href="#demo" data-bs-toggle="collapse">more</a>
+                    <div id="demo1" class="collapse">Lorem ipsum dolor sit amet...</div>
+                    <p>Price: LKR.4500.00</p>
+                    <div class="d-flex">
+                        <p>Size:</p>
+                        <select class="ms-3 form-select form-select-sm mb-3">
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                    </div>
+                    <p>Color: Black, White</p>
+                    <a href="#" class="btn btn-warning mb-1" data-bs-toggle="tooltip" title="Click here to purchase">Purchase</a>
+                    <button type="button" class="btn btn-warning mb-1" data-bs-toggle="modal" data-bs-target="#myModal">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+		<div class="p-3 product-card col-md-6 col-lg-4 col-12">
+            <div class="card text-bg-dark">
+                <img class="card-img-top p-3" src="https://imgs.search.brave.com/3zp4-sx7ESanwC-DMhPQrPJASOsUew48HS38Hb11ddU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFkRGplVXBTcEwu/anBn" alt="t-shirt1 image" style="height: 400px">
+                <div class="card-body">
+                    <h4 class="card-title">Stylish SWAG Oversized T-shirt</h4>
+                    <a href="#demo" data-bs-toggle="collapse">more</a>
+                    <div id="demo1" class="collapse">Lorem ipsum dolor sit amet...</div>
+                    <p>Price: LKR.4500.00</p>
+                    <div class="d-flex">
+                        <p>Size:</p>
+                        <select class="ms-3 form-select form-select-sm mb-3">
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                    </div>
+                    <p>Color: Black, White</p>
+                    <a href="#" class="btn btn-warning mb-1" data-bs-toggle="tooltip" title="Click here to purchase">Purchase</a>
+                    <button type="button" class="btn btn-warning mb-1" data-bs-toggle="modal" data-bs-target="#myModal">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+		<div class="p-3 product-card col-md-6 col-lg-4 col-12">
+            <div class="card text-bg-dark">
+                <img class="card-img-top p-3" src="https://imgs.search.brave.com/xf3s0jjzWP_QhMVdaDUz0tt-SMGwDSZkUU6ebLJHBKo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YXlibC5jb20vY2Ru/L3Nob3AvZmlsZXMv/MTUuMDguMjAyNDc2/MTQuanBnP3Y9MTcy/OTY4ODUyNSZ3aWR0/aD0yMDAw" alt="t-shirt1 image" style="height: 400px">
+                <div class="card-body">
+                    <h4 class="card-title">Stylish SWAG Oversized T-shirt</h4>
+                    <a href="#demo" data-bs-toggle="collapse">more</a>
+                    <div id="demo1" class="collapse">Lorem ipsum dolor sit amet...</div>
+                    <p>Price: LKR.4500.00</p>
+                    <div class="d-flex">
+                        <p>Size:</p>
+                        <select class="ms-3 form-select form-select-sm mb-3">
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                    </div>
+                    <p>Color: Black, White</p>
+                    <a href="#" class="btn btn-warning mb-1" data-bs-toggle="tooltip" title="Click here to purchase">Purchase</a>
+                    <button type="button" class="btn btn-warning mb-1" data-bs-toggle="modal" data-bs-target="#myModal">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+		<div class="p-3 product-card col-md-6 col-lg-4 col-12">
+            <div class="card text-bg-dark">
+                <img class="card-img-top p-3" src="https://imgs.search.brave.com/xoiMU1RUSOFQPEsrmQB-NmkmhJSW6tG6Dq11tyFTGdE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFQNlUyVXQyZkwu/anBn" alt="t-shirt1 image" style="height: 400px">
+                <div class="card-body">
+                    <h4 class="card-title">Stylish SWAG Oversized T-shirt</h4>
+                    <a href="#demo" data-bs-toggle="collapse">more</a>
+                    <div id="demo1" class="collapse">Lorem ipsum dolor sit amet...</div>
+                    <p>Price: LKR.4500.00</p>
+                    <div class="d-flex">
+                        <p>Size:</p>
+                        <select class="ms-3 form-select form-select-sm mb-3">
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                    </div>
+                    <p>Color: Black, White</p>
+                    <a href="#" class="btn btn-warning mb-1" data-bs-toggle="tooltip" title="Click here to purchase">Purchase</a>
+                    <button type="button" class="btn btn-warning mb-1" data-bs-toggle="modal" data-bs-target="#myModal">Add to cart</button>
+                </div>
+            </div>
+        </div>
+	</div>
+
+    <!-- About Us Section -->
+    <div id="section3" class="b-f mt-4 container shadow p-4">
+        <h1 class="text-center mb-4">About Us</h1>
+        <div class="d-flex flex-wrap gap-4">
+            <img src="https://imgs.search.brave.com/FD52yJUb9vIhXBwYO-MEj_pIDLPJhB6MAfHLKd4WuFM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTc5/Nzc5MTA0L3Bob3Rv/L21hbi1yZWFkeS10/by1leGVyY2lzZS13/aXRoLWtldHRsZS1i/ZWxsLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1aZy01WnBG/NkZ0bkE1bFc5Rkk0/Y0t4aHI3Y3pJU2Jq/dGEteGl4WWkyOC1v/PQ" 
+                 alt="gym image" class="rounded col-md-6 col-12">
+            <div class="col">
+                <p class="mb-3">
+				At <strong>Gym Swag</strong>, we believe fitness is more than a routine —
+				it’s a lifestyle built on discipline, consistency, and self-belief.
+			</p>
+
+			<p class="mb-3">
+				We’re a dedicated gym wear and footwear brand created for people who train
+				hard, move fast, and refuse to settle for average. Every product we offer
+				is designed with real workouts in mind — from intense weight sessions
+				to long cardio days and everything in between.
+			</p>
+
+			<p class="mb-3">
+				Our collections focus on <strong>performance-driven comfort</strong>,
+				durable materials, and modern athletic style. Breathable fabrics,
+				flexible fits, and strong grip soles ensure you stay comfortable,
+				confident, and supported throughout every workout.
+			</p>
+
+			<p class="mb-3">
+				Our mission is simple:
+				<strong>to deliver quality, comfort, and style that performs as hard as you do.</strong>
+				We don’t follow trends — we build gear that lasts, moves with you,
+				and keeps up with your goals.
+			</p>
+
+			<p class="mb-3">
+				Whether you’re a beginner stepping into the gym for the first time
+				or an athlete chasing peak performance, <strong>Gym Swag</strong>
+				is here to gear you up with confidence.
+			</p>
+
+			<p class="fw-bold text-uppercase mt-3">
+				Train Strong. Move Bold. Wear Your Grind.
+			</p>
+            </div>
+        </div>
+    </div>
+
+	<h1 class="text-center mt-5">Best Collections</h1>
+
+    <div id="section4" class="container d-flex flex-wrap justify-content-center p-3">
+        <div class="p-3 product-card col-md-6 col-lg-4 col-12">
+            <div class="card text-bg-dark h-100">
+                <img class="card-img-top p-3" src="Assets/t-shirt1.webp" alt="t-shirt1 image" style="height: 400px">
+                <div class="card-body">
+                    <h4 class="card-title">Stylish SWAG Oversized T-shirt</h4>
+                    <p>Built for those who train hard and move with purpose. This oversized T-shirt features a bold back graphic that speaks strength, individuality, and attitude. Crafted from soft, breathable fabric, it delivers all-day comfort whether you’re lifting heavy or styling it out on the streets. The relaxed fit allows free movement while maintaining a sharp, powerful look.
+Perfect for athletes who want their clothing to make a statement — even when they walk away.</p>
+                    </div>
+            </div>
+        </div>
+
+		<div class="p-3 product-card col-md-6 col-lg-4 col-12">
+            <div class="card text-bg-dark h-100">
+                <img class="card-img-top p-3" src="https://imgs.search.brave.com/3zp4-sx7ESanwC-DMhPQrPJASOsUew48HS38Hb11ddU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFkRGplVXBTcEwu/anBn" alt="t-shirt1 image" style="height: 400px">
+                <div class="card-body">
+                    <h4 class="card-title">Stylish SWAG Oversized T-shirt</h4>
+                    <p>Because real training isn’t pretty — it’s honest. This oversized T-shirt captures the raw reality of gym life with a bold, unapologetic statement print. Designed for comfort and confidence, the loose fit and soft fabric make it ideal for intense workouts, rest days, or casual wear.
+This piece isn’t just clothing — it’s a mindset for those who embrace the grind, soreness, and hunger that come with real progress.</p>
+                   </div>
+            </div>
+        </div>
+
+		<div class="p-3 product-card col-md-6 col-lg-4 col-12">
+            <div class="card text-bg-dark h-100">
+                <img class="card-img-top p-3" src="https://imgs.search.brave.com/xf3s0jjzWP_QhMVdaDUz0tt-SMGwDSZkUU6ebLJHBKo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YXlibC5jb20vY2Ru/L3Nob3AvZmlsZXMv/MTUuMDguMjAyNDc2/MTQuanBnP3Y9MTcy/OTY4ODUyNSZ3aWR0/aD0yMDAw" alt="t-shirt1 image" style="height: 400px">
+                <div class="card-body">
+                    <h4 class="card-title">Stylish SWAG Oversized T-shirt</h4>
+                    <p>Simple. Strong. Timeless. This minimal oversized T-shirt is designed for those who prefer clean aesthetics without compromising performance. Made with premium fabric and a relaxed fit, it offers unmatched comfort and versatility. Wear it in the gym, on rest days, or as part of a clean streetwear fit.
+A true essential that proves you don’t need loud designs to stand out.</p>
+                    </div>
+            </div>
+        </div>
+	</div>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark text-light pt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4 col-12">
+                    <h5>Gym Swag</h5>
+                    <p>Train Strong. Wear Discipline.</p>
+                </div>
+                <div class="col-md-4 col-12">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Products</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                    <h5>Contact</h5>
+                    <form>
+                        <input class="form-control mb-2" placeholder="Email">
+                        <textarea class="form-control mb-2" rows="2" placeholder="Message"></textarea>
+                        <button class="btn btn-warning w-100">Send</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p class="text-center small">&copy; 2026 Gym Swag. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
