@@ -8,25 +8,18 @@ The website supports both Light Mode and Dark Mode, allowing users to switch bet
 
 Key Features:
 
-Responsive Design: Built using Bootstrap to ensure proper layout and alignment on all screen sizes, including mobile devices.
-
-Light & Dark Theme Support: Enhances user experience by providing visual flexibility and accessibility.
-
-Product Display Section: Gym T-shirts presented using cards with images, pricing, size selection, and color options.
-
-Interactive UI Components: Carousel sliders, modals (Add to Cart), tooltips, collapsible descriptions, and navigation menus.
-
-Modern User Interface: Clean layout, strong typography, and fitness-inspired visual design.
-
-Structured Navigation: Clearly separated Home, Products, About Us, and Contact sections for easy usability.
+1. Responsive Design: Built using Bootstrap to ensure proper layout and alignment on all screen sizes, including mobile devices.
+2. Light & Dark Theme Support: Enhances user experience by providing visual flexibility and accessibility.
+3. Product Display Section: Gym T-shirts presented using cards with images, pricing, size selection, and color options.
+4. Interactive UI Components: Carousel sliders, modals (Add to Cart), tooltips, collapsible descriptions, and navigation menus.
+5. Modern User Interface: Clean layout, strong typography, and fitness-inspired visual design.
+6. Structured Navigation: Clearly separated Home, Products, About Us, and Contact sections for easy usability.
 
 Technologies Used:
 
-HTML5 for page structure
-
-CSS3 & Bootstrap 5 for styling and responsive layout
-
-JavaScript (Bootstrap components) for interactive elements
+1. HTML5 for page structure
+2. CSS3 & Bootstrap 5 for styling and responsive layout
+3. JavaScript (Bootstrap components) for interactive elements
 
 Project Objective:
 
