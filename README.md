@@ -24,3 +24,11 @@ Technologies Used:
 Project Objective:
 
 The objective of this project is to demonstrate practical knowledge of front-end web development, responsive design techniques, and UI/UX principles while building a real-world gym apparel website with theme customization and mobile-friendly performance.
+
+<img width="1899" height="871" alt="Gym clothing website" src="https://github.com/user-attachments/assets/0d1d09f6-35d7-45ad-9fbd-2cd9fc5f0e8e" />
+<img width="1902" height="875" alt="image" src="https://github.com/user-attachments/assets/38bb36bf-a81a-4b8f-a7a9-bcbed699e9de" />
+<img width="1897" height="880" alt="image" src="https://github.com/user-attachments/assets/4a4136c2-70c0-48d0-95bb-ad3c98f38aa2" />
+<img width="1899" height="871" alt="image" src="https://github.com/user-attachments/assets/b7e0ff71-6d1f-4f68-aec0-f4497c8b1f82" />
+
+
+
