@@ -1,0 +1,22 @@
+/* Ensure carousel images scale properly on mobile */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+/* Product card images scale on small devices */
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/* Fix description + image section for mobile */
+.home-description {
+    flex-wrap: wrap !important;
+}
+.home-description img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
