@@ -5,18 +5,53 @@
     max-height: 500px;
     object-fit: cover;
 }
+
 /* Product card images scale on small devices */
 .product-card img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
+
 /* Fix description + image section for mobile */
 .home-description {
     flex-wrap: wrap !important;
 }
+
 .home-description img {
     max-width: 100%;
     height: auto;
     margin-bottom: 15px;
+}
+
+/* ── Mobile Navbar Fixes ── */
+@media (max-width: 991.98px) {
+
+    /* Give the open dropdown panel some padding */
+    #navbarMenu {
+        padding: 10px 0;
+    }
+
+    /* Nav links stack vertically with a small gap */
+    #navbarMenu .navbar-nav {
+        flex-direction: column;
+        gap: 4px;
+        margin-bottom: 10px;
+    }
+
+    /* Each nav-link button fills the full width so it's easy to tap */
+    #navbarMenu .nav-item .nav-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Search bar stacks nicely below the links */
+    #navbarMenu form {
+        width: 100%;
+    }
+
+    #navbarMenu form input {
+        flex: 1;
+    }
 }
